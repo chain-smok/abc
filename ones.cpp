@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+ int n;
+ while(cin>>n){
+  int ans=1,rd=1;
+  while(rd%n){
+    ans++;
+    rd=(rd*10+1)%n;
+  }
+   cout<<ans;
+ }
+}
