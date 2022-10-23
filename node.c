@@ -14,6 +14,7 @@ void main(){
        scanf("%d",&n);
        for(i=0;i<n;i++){
            temp=malloc(sizeof(struct stdRec));
+           //malloc() 配置 size bytes 的記憶體區塊，會回傳一個指向該記憶體開頭的指標，
            scanf("%s",temp->ID);
            scanf("%s",temp->name);
            scanf("%d",&temp->score);
